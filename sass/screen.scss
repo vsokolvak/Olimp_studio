@@ -8,8 +8,13 @@ a{
     color: inherit;
     text-decoration: none;
 }
+//fonts here
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+//end fonts
 //peremenna9 here
-$page_font: Arial;
+$page_font: Lobster;
 $page_color: black;
 
 //peremenna9 end
@@ -102,7 +107,7 @@ main{
     }
     @keyframes bgImg{
         0%{
-            opacity: 0.1;
+            opacity: 0.3;
         }
         100%{
             opacity: 1;

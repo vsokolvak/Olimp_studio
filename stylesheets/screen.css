@@ -2,6 +2,8 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
 /* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -73,9 +75,9 @@ a {
   text-decoration: none;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 header {
-  font-family: Arial;
+  font-family: Lobster;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -84,7 +86,7 @@ header {
   box-sizing: border-box;
   position: relative;
 }
-/* line 33, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 header .logo {
   font-size: 30px;
   font-weight: bold;
@@ -95,20 +97,20 @@ header .logo {
   justify-content: center;
   align-items: center;
 }
-/* line 40, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 header .logo:hover {
   color: red;
 }
-/* line 45, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 header .menu {
   display: flex;
   justify-content: space-between;
 }
-/* line 49, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 header .menu ul {
   display: flex;
 }
-/* line 53, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 header .menu li {
   font-size: 20px;
   color: black;
@@ -118,11 +120,11 @@ header .menu li {
   justify-content: center;
   align-items: center;
 }
-/* line 60, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 header .menu li:hover {
   color: red;
 }
-/* line 64, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 header .menu li .menu_inner {
   opacity: 0;
   display: block;
@@ -134,12 +136,12 @@ header .menu li .menu_inner {
   height: 3px;
   background-color: red;
 }
-/* line 76, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 header .menu li:hover .menu_inner {
   opacity: 1;
   top: 0;
 }
-/* line 84, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 header .contact {
   width: 20%;
   font-size: 15px;
@@ -149,12 +151,12 @@ header .contact {
   align-items: center;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 main {
   position: relative;
   height: 100%;
 }
-/* line 96, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 main .main_bg {
   position: absolute;
   left: 0;
@@ -164,7 +166,7 @@ main .main_bg {
 }
 @keyframes bgImg {
   0% {
-    opacity: 0.1;
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
