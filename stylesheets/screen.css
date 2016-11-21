@@ -85,8 +85,9 @@ header {
   height: 100px;
   box-sizing: border-box;
   position: relative;
+  background-image: linear-gradient(to bottom left, #277dba, #c5f0f6);
 }
-/* line 38, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 header .logo {
   font-size: 30px;
   font-weight: bold;
@@ -97,20 +98,20 @@ header .logo {
   justify-content: center;
   align-items: center;
 }
-/* line 45, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 header .logo:hover {
   color: red;
 }
-/* line 50, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 header .menu {
   display: flex;
   justify-content: space-between;
 }
-/* line 54, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 header .menu ul {
   display: flex;
 }
-/* line 58, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 header .menu li {
   font-size: 25px;
   font-weight: normal;
@@ -121,12 +122,12 @@ header .menu li {
   justify-content: center;
   align-items: center;
 }
-/* line 66, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 header .menu li:hover {
   color: red;
   text-shadow: 1px 1px 0 black;
 }
-/* line 71, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 header .menu li .menu_inner {
   opacity: 0;
   display: block;
@@ -138,12 +139,12 @@ header .menu li .menu_inner {
   height: 3px;
   background-color: red;
 }
-/* line 83, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 header .menu li:hover .menu_inner {
   opacity: 1;
   top: 0;
 }
-/* line 91, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 header .contact {
   width: 20%;
   font-size: 15px;
@@ -153,12 +154,12 @@ header .contact {
   align-items: center;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 main {
   position: relative;
   height: 100%;
 }
-/* line 103, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 main .main_bg {
   position: absolute;
   left: 0;
