@@ -8,13 +8,20 @@ a{
     color: inherit;
     text-decoration: none;
 }
+//peremenna9 here
+$page_font: Arial;
+$page_color: black;
 
+//peremenna9 end
+//mixin here
 @mixin flex_centr(){
     display: flex;
     justify-content: center;
     align-items: center;
 }
+//mixin end
 header{
+    font-family: $page_font;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -30,6 +37,9 @@ header{
         color: darkblue;
         width: 20%;
         @include flex_centr();
+        &:hover{
+            color: red;
+        }
     }
 
     .menu{
@@ -42,7 +52,7 @@ header{
         
         li{
             font-size: 20px;
-            color: black;
+            color: $page_color;
             padding: 10px;
             position: relative;
             @include flex_centr();
@@ -81,22 +91,20 @@ header{
 
 main{
     position: relative;
+    height: 100%;
 
     .main_bg{
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
-        animation: bgImg 10s;
-
+        animation: bgImg 5s linear infinite;
     }
     @keyframes bgImg{
         0%{
-            filter: blur(5px);
-            opacity: 0;
+            opacity: 0.1;
         }
         100%{
-            filter: blur(1px);
             opacity: 1;
         }
     }
