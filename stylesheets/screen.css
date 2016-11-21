@@ -112,7 +112,8 @@ header .menu ul {
 }
 /* line 58, ../sass/screen.scss */
 header .menu li {
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: normal;
   color: black;
   padding: 10px;
   position: relative;
@@ -120,11 +121,12 @@ header .menu li {
   justify-content: center;
   align-items: center;
 }
-/* line 65, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 header .menu li:hover {
   color: red;
+  text-shadow: 1px 1px 0 black;
 }
-/* line 69, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 header .menu li .menu_inner {
   opacity: 0;
   display: block;
@@ -136,12 +138,12 @@ header .menu li .menu_inner {
   height: 3px;
   background-color: red;
 }
-/* line 81, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 header .menu li:hover .menu_inner {
   opacity: 1;
   top: 0;
 }
-/* line 89, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 header .contact {
   width: 20%;
   font-size: 15px;
@@ -151,12 +153,12 @@ header .contact {
   align-items: center;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 main {
   position: relative;
   height: 100%;
 }
-/* line 101, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 main .main_bg {
   position: absolute;
   left: 0;

@@ -56,7 +56,8 @@ header{
         }
         
         li{
-            font-size: 20px;
+            font-size: 25px;
+            font-weight: normal;
             color: $page_color;
             padding: 10px;
             position: relative;
@@ -64,6 +65,7 @@ header{
             
             &:hover{
                 color: red;
+                text-shadow: 1px 1px 0 black;
             }
             
             .menu_inner{
