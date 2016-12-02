@@ -25,6 +25,7 @@ $page_color: black;
     align-items: center;
 }
 //mixin end
+  
 header{
     font-family: $page_font;
     width: 100%;
@@ -34,8 +35,7 @@ header{
     height: 100px;
     box-sizing: border-box;
     position: relative;
-    background-image: linear-gradient(to bottom left, #277dba, #c5f0f6);
-    
+       
     .logo{
         font-size: 30px;
         font-weight: bold;
@@ -97,16 +97,12 @@ header{
     }
 }
 
-main{
+.main{
     position: relative;
-    height: 100%;
-
-    .main_bg{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        animation: bgImg 7s linear;
+    margin: auto;
+    animation: bgImg 7s linear;
+    background: deepskyblue url('../images/bg_image1.jpg') no-repeat;
+    background-size: contain;
     }
     @keyframes bgImg{
         0%{
@@ -115,5 +111,4 @@ main{
         100%{
             opacity: 1;
         }
-    }
 }

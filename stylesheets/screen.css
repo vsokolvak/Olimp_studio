@@ -75,7 +75,7 @@ a {
   text-decoration: none;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 header {
   font-family: Lobster;
   width: 100%;
@@ -85,7 +85,6 @@ header {
   height: 100px;
   box-sizing: border-box;
   position: relative;
-  background-image: linear-gradient(to bottom left, #277dba, #c5f0f6);
 }
 /* line 39, ../sass/screen.scss */
 header .logo {
@@ -155,18 +154,14 @@ header .contact {
 }
 
 /* line 100, ../sass/screen.scss */
-main {
+.main {
   position: relative;
-  height: 100%;
-}
-/* line 104, ../sass/screen.scss */
-main .main_bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
+  margin: auto;
   animation: bgImg 7s linear;
+  background: deepskyblue url("../images/bg_image1.jpg") no-repeat;
+  background-size: contain;
 }
+
 @keyframes bgImg {
   0% {
     opacity: 0.3;
