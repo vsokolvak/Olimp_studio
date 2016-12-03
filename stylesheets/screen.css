@@ -155,11 +155,9 @@ header .contact {
 
 /* line 100, ../sass/screen.scss */
 .main {
+  width: 50%;
   position: relative;
   margin: auto;
-  animation: bgImg 7s linear;
-  background: deepskyblue url("../images/bg_image1.jpg") no-repeat;
-  background-size: contain;
 }
 
 @keyframes bgImg {
@@ -169,4 +167,24 @@ header .contact {
   100% {
     opacity: 1;
   }
+}
+/* line 113, ../sass/screen.scss */
+.slider {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 118, ../sass/screen.scss */
+#slide {
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* line 124, ../sass/screen.scss */
+.column {
+  background: cadetblue url("../images/column.png") no-repeat;
 }

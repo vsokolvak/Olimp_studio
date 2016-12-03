@@ -96,13 +96,11 @@ header{
         @include flex_centr();
     }
 }
-
+ 
 .main{
+    width: 50%;
     position: relative;
     margin: auto;
-    animation: bgImg 7s linear;
-    background: deepskyblue url('../images/bg_image1.jpg') no-repeat;
-    background-size: contain;
     }
     @keyframes bgImg{
         0%{
@@ -111,4 +109,18 @@ header{
         100%{
             opacity: 1;
         }
+}
+.slider{
+    position: relative;
+    width: 100%;
+    @include flex_centr();
+}
+#slide{
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+}
+
+.column{
+    background: cadetblue url('../images/column.png') no-repeat ;
 }
