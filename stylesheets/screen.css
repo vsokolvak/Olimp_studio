@@ -75,116 +75,232 @@ a {
   text-decoration: none;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
+body {
+  min-width: 900px;
+  width: 50%;
+  margin: auto;
+}
+
+/* line 34, ../sass/screen.scss */
 header {
-  font-family: Lobster;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
+  padding: 20px;
   box-sizing: border-box;
-  position: relative;
 }
 /* line 39, ../sass/screen.scss */
 header .logo {
-  font-size: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: darkblue;
   width: 20%;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-/* line 46, ../sass/screen.scss */
-header .logo:hover {
-  color: red;
-}
-/* line 51, ../sass/screen.scss */
-header .menu {
-  display: flex;
-  justify-content: space-between;
-}
-/* line 55, ../sass/screen.scss */
-header .menu ul {
-  display: flex;
-}
-/* line 59, ../sass/screen.scss */
-header .menu li {
-  font-size: 25px;
-  font-weight: normal;
-  color: black;
-  padding: 10px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* line 67, ../sass/screen.scss */
-header .menu li:hover {
-  color: red;
-  text-shadow: 1px 1px 0 black;
-}
-/* line 72, ../sass/screen.scss */
-header .menu li .menu_inner {
-  opacity: 0;
-  display: block;
-  width: 100%;
-  position: absolute;
-  top: -30px;
-  left: 0;
-  transition: all 0.4s;
-  height: 3px;
-  background-color: red;
-}
-/* line 84, ../sass/screen.scss */
-header .menu li:hover .menu_inner {
-  opacity: 1;
-  top: 0;
-}
-/* line 92, ../sass/screen.scss */
-header .contact {
-  width: 20%;
-  font-size: 15px;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* line 100, ../sass/screen.scss */
-.main {
+/* line 44, ../sass/screen.scss */
+header .logo img {
   width: 50%;
-  position: relative;
-  margin: auto;
 }
-
-@keyframes bgImg {
-  0% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
+/* line 47, ../sass/screen.scss */
+header .logo h1 {
+  padding-top: 10px;
 }
-/* line 113, ../sass/screen.scss */
-.slider {
-  position: relative;
-  width: 100%;
+/* line 52, ../sass/screen.scss */
+header .title {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  box-sizing: border-box;
+}
+/* line 58, ../sass/screen.scss */
+header .title .contact {
+  text-align: right;
+  padding: 10px;
+}
+/* line 64, ../sass/screen.scss */
+header .title .menu ul {
+  display: flex;
+  background-color: grey;
+  border-radius: 3px;
+}
+/* line 68, ../sass/screen.scss */
+header .title .menu ul li {
+  padding: 10px;
+}
+/* line 70, ../sass/screen.scss */
+header .title .menu ul li:hover {
+  background-color: red;
+  color: white;
+  text-shadow: 1px 1px black;
+  transform: scale(1.1);
+  transition: all 50ms;
+  border-radius: 3px;
 }
 
-/* line 118, ../sass/screen.scss */
-#slide {
-  height: auto;
-  max-width: 100%;
-  margin: auto;
+/* line 84, ../sass/screen.scss */
+.pxs_container {
+  width: 100%;
+  height: 420px;
+  position: relative;
+  border-top: 7px solid #333;
+  border-bottom: 7px solid #333;
+  overflow: hidden;
+  -moz-box-shadow: 0px 0px 7px #000;
+  -webkit-box-shadow: 0px 0px 7px #000;
+  box-shadow: 0px 0px 7px #000;
 }
 
-/* line 124, ../sass/screen.scss */
-.column {
-  background: cadetblue url("../images/column.png") no-repeat;
+/* line 95, ../sass/screen.scss */
+.pxs_bg {
+  background: transparent url(../images/bg.png) repeat top left;
+}
+
+/* line 98, ../sass/screen.scss */
+.pxs_bg div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 7584px;
+  /*1264px window width times number of images*/
+  height: 420px;
+  background-repeat: repeat;
+  background-position: top left;
+  background-color: transparent;
+}
+
+/* line 108, ../sass/screen.scss */
+.pxs_bg .pxs_bg1 {
+  background-image: url(../images/bg1.png);
+  /*left negative 1/8 of ww*/
+}
+
+/* line 112, ../sass/screen.scss */
+.pxs_bg .pxs_bg2 {
+  background-image: url(../images/bg2.png);
+  /*left negative 1/4 of ww*/
+}
+
+/* line 116, ../sass/screen.scss */
+.pxs_bg .pxs_bg3 {
+  background-image: url(../images/bg3.png);
+  /*left negative 1/2 of ww*/
+}
+
+/* line 120, ../sass/screen.scss */
+.pxs_slider_wrapper {
+  display: none;
+}
+
+/* line 123, ../sass/screen.scss */
+.pxs_container ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/* line 128, ../sass/screen.scss */
+ul.pxs_slider {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 420px;
+}
+
+/* line 134, ../sass/screen.scss */
+ul.pxs_slider li {
+  height: 420px;
+  float: left;
+  position: relative;
+}
+
+/* line 139, ../sass/screen.scss */
+ul.pxs_slider li img {
+  display: block;
+  margin: 35px auto 0px auto;
+  -moz-box-shadow: 0px 0px 7px #222;
+  -webkit-box-shadow: 0px 0px 7px #222;
+  box-shadow: 0px 0px 7px #222;
+  border: 8px solid transparent;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 150, ../sass/screen.scss */
+ul.pxs_thumbnails {
+  height: 35px;
+  position: absolute;
+  top: 320px;
+  left: 50%;
+}
+
+/* line 156, ../sass/screen.scss */
+ul.pxs_thumbnails li {
+  position: absolute;
+  display: block;
+}
+
+/* line 160, ../sass/screen.scss */
+ul.pxs_thumbnails li img {
+  border: 5px solid #FFFFFF;
+  -moz-box-shadow: 1px 1px 7px #555;
+  -webkit-box-shadow: 1px 1px 7px #555;
+  box-shadow: 1px 1px 7px #555;
+  cursor: pointer;
+  display: block;
+  opacity: 0.7;
+}
+
+/* line 169, ../sass/screen.scss */
+ul.pxs_thumbnails li.selected img {
+  opacity: 1.0;
+}
+
+/* line 172, ../sass/screen.scss */
+.pxs_navigation span {
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  -moz-box-shadow: 0px 0px 2px #000;
+  -webkit-box-shadow: 0px 0px 2px #000;
+  box-shadow: 0px 0px 2px #000;
+  top: 145px;
+  opacity: 0.6;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* line 186, ../sass/screen.scss */
+.pxs_navigation span:hover {
+  opacity: 0.9;
+}
+
+/* line 189, ../sass/screen.scss */
+.pxs_navigation span.pxs_prev {
+  background: #000 url(../images/prev.png) no-repeat center center;
+}
+
+/* line 192, ../sass/screen.scss */
+.pxs_navigation span.pxs_next {
+  background: #000 url(../images/next.png) no-repeat center center;
+}
+
+/* line 195, ../sass/screen.scss */
+.pxs_loading {
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 15px 15px 50px;
+  position: absolute;
+  background: #333 url(../images/ajax-loader.gif) no-repeat 10px 50%;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  opacity: 0.7;
+  width: 180px;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  margin-left: -90px;
 }
