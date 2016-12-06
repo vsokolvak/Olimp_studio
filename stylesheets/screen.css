@@ -145,18 +145,45 @@ main .slider {
   margin: auto;
   overflow: hidden;
 }
-/* line 90, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
+main .slider .bef, main .slider .aft {
+  z-index: 10;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid transparent;
+  border-right: 50px solid black;
+  opacity: 0.7;
+}
+/* line 102, ../sass/screen.scss */
+main .slider .bef:hover, main .slider .aft:hover {
+  cursor: pointer;
+}
+/* line 106, ../sass/screen.scss */
+main .slider .aft {
+  border-left: 50px solid black;
+  border-right: none;
+  right: 50px;
+}
+/* line 111, ../sass/screen.scss */
+main .slider .bef {
+  left: 50px;
+}
+/* line 115, ../sass/screen.scss */
 main .slider .big_image {
   display: flex;
   position: relative;
   transition: all 1s;
   left: 0;
 }
-/* line 95, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 main .slider .big_image li {
   width: 900px;
 }
-/* line 99, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 main .slider .small_image {
   display: flex;
   justify-content: space-around;
@@ -164,7 +191,7 @@ main .slider .small_image {
   bottom: 20px;
   width: 100%;
 }
-/* line 105, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 main .slider .small_image li {
   border: 2px solid black;
   padding: 3px;
@@ -175,7 +202,7 @@ main .slider .small_image li {
   transition: all 0.5s;
   position: relative;
 }
-/* line 112, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 main .slider .small_image li:hover {
   transform: translateY(-5px) scale(1.3) rotate(-5deg);
 }
