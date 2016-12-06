@@ -89,6 +89,9 @@ main{
         overflow: hidden;
         .big_image{
             display: flex;
+            position: relative;
+            transition: all 1s;
+            left: 0;
             li{
                 width: 900px;
             }
@@ -104,8 +107,11 @@ main{
                 padding: 3px;
                 background-color: white;
                 @include flex_centr;
-                transition: bottom 0.5s;
+                transition: all 0.5s;
                 position: relative;
+                &:hover{ 
+                    transform: translateY(-5px) scale(1.3) rotate(-5deg);
+                }
             }
         }
 
