@@ -30,7 +30,7 @@ window.onload = function(){
     //end small image
     //function click mside_mini
     function goscroll(e){
-        coef = this.children[0].id;
+        coef = this.children[0].id*1;
         console.log(coef);
         tape.style.left = -900*coef + 'px';
     }

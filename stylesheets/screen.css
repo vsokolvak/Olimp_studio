@@ -77,57 +77,61 @@ a {
 
 /* line 28, ../sass/screen.scss */
 body {
-  min-width: 900px;
-  width: 50%;
+  width: 1000px;
   margin: auto;
+  background-color: slategray;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 header {
   display: flex;
   padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   box-sizing: border-box;
+  background-color: white;
 }
-/* line 39, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 header .logo {
   width: 20%;
   box-sizing: border-box;
   display: flex;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
-/* line 44, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 header .logo img {
   width: 50%;
 }
-/* line 47, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 header .logo h1 {
   padding-top: 10px;
 }
-/* line 52, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 header .title {
   display: flex;
   flex-direction: column;
   width: 80%;
   box-sizing: border-box;
 }
-/* line 58, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 header .title .contact {
   text-align: right;
   padding: 10px;
+  padding-right: 0;
 }
-/* line 64, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 header .title .menu ul {
   display: flex;
   background-color: grey;
   border-radius: 3px;
 }
-/* line 68, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 header .title .menu ul li {
   padding: 10px;
 }
-/* line 70, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 header .title .menu ul li:hover {
   background-color: red;
   color: white;
@@ -137,7 +141,13 @@ header .title .menu ul li:hover {
   border-radius: 3px;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
+main {
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+}
+/* line 92, ../sass/screen.scss */
 main .slider {
   height: 300px;
   width: 900px;
@@ -145,7 +155,7 @@ main .slider {
   margin: auto;
   overflow: hidden;
 }
-/* line 91, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 main .slider .bef, main .slider .aft {
   z-index: 10;
   position: absolute;
@@ -158,32 +168,32 @@ main .slider .bef, main .slider .aft {
   border-right: 50px solid black;
   opacity: 0.7;
 }
-/* line 102, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 main .slider .bef:hover, main .slider .aft:hover {
   cursor: pointer;
 }
-/* line 106, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 main .slider .aft {
   border-left: 50px solid black;
   border-right: none;
   right: 50px;
 }
-/* line 111, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 main .slider .bef {
   left: 50px;
 }
-/* line 115, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 main .slider .big_image {
   display: flex;
   position: relative;
   transition: all 1s;
   left: 0;
 }
-/* line 120, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 main .slider .big_image li {
   width: 900px;
 }
-/* line 125, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 main .slider .small_image {
   display: flex;
   justify-content: space-around;
@@ -191,7 +201,7 @@ main .slider .small_image {
   bottom: 20px;
   width: 100%;
 }
-/* line 131, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 main .slider .small_image li {
   border: 2px solid black;
   padding: 3px;
@@ -202,7 +212,71 @@ main .slider .small_image li {
   transition: all 0.5s;
   position: relative;
 }
-/* line 138, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 main .slider .small_image li:hover {
   transform: translateY(-5px) scale(1.3) rotate(-5deg);
+}
+
+/* line 154, ../sass/screen.scss */
+.content {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: lightgrey;
+}
+/* line 162, ../sass/screen.scss */
+.content a {
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 40%;
+  position: relative;
+  box-sizing: border-box;
+}
+/* line 169, ../sass/screen.scss */
+.content a img {
+  width: 100%;
+  height: 100%;
+}
+/* line 173, ../sass/screen.scss */
+.content a span {
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  background-color: black;
+  opacity: 0.7;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  min-height: 40px;
+  max-height: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+/* line 190, ../sass/screen.scss */
+.content a span:hover {
+  opacity: 1;
+  background-color: red;
+  text-shadow: 1px 1px black;
+}
+
+/* line 199, ../sass/screen.scss */
+footer {
+  background-color: grey;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
