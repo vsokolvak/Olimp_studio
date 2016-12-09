@@ -6,9 +6,6 @@ window.onload = function(){
     var tape = document.getElementsByClassName('big_image')[0];
     var scroll = cont_slide.offsetWidth;
     var coef = 0;
-    console.log(slide);
-    console.log(slide_mini);
-    console.dir(cont_slide);
 
     //create big image
     for ( var i = 0; i < slide.length; i++){
@@ -28,34 +25,61 @@ window.onload = function(){
         slide_mini[i].appendChild(cont_img);
     }
     //end small image
+    
+    //autoscroll
+    function autoscroll(){
+       if (coef < 4) 
+       coef++;
+       else
+       coef = 0;
+       scrolling(coef);
+    };
+    var autoscrolling = setInterval(autoscroll, 6000);
+
+    function autoscrollrestart(){
+        clearInterval(autoscrolling);
+        autoscrolling = setInterval(autoscroll, 6000);
+    }
+    //end
+
+    //functoon scrolling
+    function scrolling(scrol){
+        tape.style.left = -900*scrol + 'px';
+    }
+    //end
+
     //function click mside_mini
     function goscroll(e){
         coef = this.children[0].id*1;
-        console.log(coef);
-        tape.style.left = -900*coef + 'px';
+        scrolling(coef);
+        autoscrollrestart();
     }
     //end
+    
     //add scroll to click small img
     for(i = 0; i < slide_mini.length; i++){
         slide_mini[i].addEventListener('click', goscroll);
     }
     //end
+    
     //добавление прокрутки стрелками
     var next = document.getElementsByClassName("aft")[0];
     var prev = document.getElementsByClassName("bef")[0];
     function gonext(){
         if (coef < 4)
         coef = coef + 1;
-        tape.style.left = -900*coef + 'px';
+        scrolling(coef);
+        autoscrollrestart();
     }
     function goprev(){
         if (coef > 0)
         coef = coef - 1;
-        tape.style.left = -900*coef + 'px';
+        scrolling(coef);
+        autoscrollrestart();
     }
     next.addEventListener('click', gonext);
     prev.addEventListener('click', goprev);
-
     //конец
+
 
 }

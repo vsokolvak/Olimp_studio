@@ -1,0 +1,31 @@
+//mixin
+@mixin thema_red(){
+    background-color: red;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+//mixin end
+main{
+    .photo_content{
+        h2{
+            @include thema_red;
+            font-size: 25px;
+            display: inline-block;
+            padding: 5px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .text{
+            width: 80%;
+            margin: auto;
+            text-indent: 20px;
+            font-size: 20px;
+        }
+    }
+    .img_cont{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+}

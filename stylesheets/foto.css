@@ -1,0 +1,24 @@
+/* line 10, ../sass/foto.scss */
+main .photo_content h2 {
+  background-color: red;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 25px;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+/* line 18, ../sass/foto.scss */
+main .photo_content .text {
+  width: 80%;
+  margin: auto;
+  text-indent: 20px;
+  font-size: 20px;
+}
+/* line 25, ../sass/foto.scss */
+main .img_cont {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
